@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+
+html {
+  background-color: black;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  font-family: "Electrolize", sans-serif;
+  color: #0f0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+canvas {
+  width: 100vw;
+}
+
+#app {
+  position: absolute;
+  top: 3rem;
+  background-color: rgba(0, 0, 0, 0.72);
+  width: 80vw;
+  min-height: 30rem;
+  left: 10%;
+  right: 10%;
+  display: flex;
+  padding: 10px;
+}
+#app textarea {
+  min-width: 20rem;
+  height: 70%;
+  background-color: transparent;
+  color: #0f0;
+  resize: none;
+  margin: 0 auto;
+}
+
+#form {
+  width: 100%;
+}
+#result {
+  padding: 20px;
+  min-width: 20rem;
+}
+#result-container {
+  position: relative;
+  min-height: 80%;
+}
+#result-container img {
+  margin-left: 80%;
+  width: 1rem;
+  filter: brightness(0) saturate(100%) invert(60%) sepia(67%) saturate(4495%)
+    hue-rotate(87deg) brightness(121%) contrast(125%);
+}
+
+@media (max-width: 900px) {
+  #app {
+    flex-wrap: wrap;
+    height: 100vh;
+  }
+
+  canvas {
+    height: 100vh;
+  }
+  #result {
+    max-width: 50vw;
+    height: 3rem;
+  }
+}
+
+#buttons button {
+  background-color: #0f0;
+
+  border: 2px solid #0f0;
+  border-radius: 25px;
+
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+#buttons button:hover {
+  background-color: transparent;
+  color: #0f0;
+  cursor: pointer;
+}
+
+#notification {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 16px;
+  background-color: #0f0;
+  color: black;
+  border-radius: 4px;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  height: 6rem;
+}
+footer p {
+  display: flex;
+  align-items: center;
+}
+#footer-icons {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 20px;
+}
+
+#footer-icons img {
+  width: 1rem;
+  filter: brightness(0) saturate(100%) invert(60%) sepia(67%) saturate(4495%)
+    hue-rotate(87deg) brightness(121%) contrast(125%);
+}

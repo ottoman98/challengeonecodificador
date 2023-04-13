@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="matrix"></canvas>
+    <div id="app">
+        <div id='form'>
+            <h1>En/De-Criptador</h1>
+            <textarea name="" id="sentence" maxlength="1000"></textarea>
+            <div id="buttons">
+                <button onclick="encripter()">Encriptar</button>
+                <button onclick="decripter()">Desencriptar</button>
+            </div>
+
+
+        </div>
+
+
+
+        <div>
+            <div id="result-container">
+                <p id="result">
+
+
+                </p>
+                <img id="copy-button" src="./img/copia.png" alt="">
+                <div id="notification">Texto copiado al portapapeles</div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <footer>
+        <p>Desarrollado por Osman barros</p>
+        <div id="footer-icons">
+            <img src="./img/github.png" alt="">
+            <img src="./img/instagram.png" alt="">
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+    <script src="./background.js"></script>
+</body>
+
+</html>
